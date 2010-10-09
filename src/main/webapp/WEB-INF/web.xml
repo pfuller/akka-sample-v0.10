@@ -6,11 +6,15 @@
 
     <display-name>Akka-Sample-v0.10</display-name>
     
+    <listener>
+        <listener-class>se.scalablesolutions.akka.servlet.Initializer</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>AkkaServlet</servlet-name>
         <servlet-class>se.scalablesolutions.akka.comet.AkkaServlet</servlet-class>
     </servlet>
-
+    
     <servlet-mapping>
         <servlet-name>AkkaServlet</servlet-name>
         <url-pattern>/*</url-pattern>
